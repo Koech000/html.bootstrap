@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bootstraps elements fonts and tables</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 <div class="container-fluid">
     <div class="row mx-auto">
         <div class='col-md-8'>
@@ -45,7 +55,7 @@
         <h3 class="text-center">register now</h3>
         <form action="">
         <div class="my-3">
-            <label for='name' class="form-label">First name</label>
+            <label for='name' class="form-label" >First name</label>
             <input type="text" class="form-control" id="name" placeholder="First name">
         </div>
         <div class="my-3">
@@ -67,10 +77,17 @@
 <!--        select for educational level-->
 <!--        radio button for gender-->
 <!--        checkboxes for favourite sports-->
+            <h2>select your favourite sport</h2>
+            <input type="checkbox" id="football">
+            <label for="football">football</label>
+            <input type="checkbox" id="basketball">
+                <label for="basketball">basketball</label>
+
 
            input
             <button class="btn btn-success"> register</button>
 
+        </form>
     </div>
 </div>
     </div>
